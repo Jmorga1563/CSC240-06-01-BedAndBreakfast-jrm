@@ -30,13 +30,15 @@
         {
             welcomeLabel = new Label();
             rateLabel = new Label();
+            belleAireCheckbox = new CheckBox();
+            lincolnCheckBox = new CheckBox();
             SuspendLayout();
             // 
             // welcomeLabel
             // 
             welcomeLabel.AutoSize = true;
             welcomeLabel.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            welcomeLabel.Location = new Point(63, 67);
+            welcomeLabel.Location = new Point(86, 67);
             welcomeLabel.Name = "welcomeLabel";
             welcomeLabel.Size = new Size(701, 82);
             welcomeLabel.TabIndex = 0;
@@ -46,11 +48,33 @@
             // 
             rateLabel.AutoSize = true;
             rateLabel.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            rateLabel.Location = new Point(156, 172);
+            rateLabel.Location = new Point(156, 188);
             rateLabel.Name = "rateLabel";
             rateLabel.Size = new Size(484, 73);
             rateLabel.TabIndex = 1;
             rateLabel.Text = "Check our rates";
+            // 
+            // belleAireCheckbox
+            // 
+            belleAireCheckbox.AutoSize = true;
+            belleAireCheckbox.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            belleAireCheckbox.Location = new Point(168, 352);
+            belleAireCheckbox.Name = "belleAireCheckbox";
+            belleAireCheckbox.Size = new Size(472, 68);
+            belleAireCheckbox.TabIndex = 2;
+            belleAireCheckbox.Text = "Belle Aire Suite";
+            belleAireCheckbox.UseVisualStyleBackColor = true;
+            // 
+            // lincolnCheckBox
+            // 
+            lincolnCheckBox.AutoSize = true;
+            lincolnCheckBox.Font = new Font("Microsoft Sans Serif", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lincolnCheckBox.Location = new Point(168, 448);
+            lincolnCheckBox.Name = "lincolnCheckBox";
+            lincolnCheckBox.Size = new Size(427, 68);
+            lincolnCheckBox.TabIndex = 3;
+            lincolnCheckBox.Text = "Lincoln Room";
+            lincolnCheckBox.UseVisualStyleBackColor = true;
             // 
             // BaileysForm
             // 
@@ -58,6 +82,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.OldLace;
             ClientSize = new Size(871, 687);
+            Controls.Add(lincolnCheckBox);
+            Controls.Add(belleAireCheckbox);
             Controls.Add(rateLabel);
             Controls.Add(welcomeLabel);
             Name = "BaileysForm";
@@ -70,5 +96,7 @@
 
         private Label welcomeLabel;
         private Label rateLabel;
+        private CheckBox belleAireCheckbox;
+        private CheckBox lincolnCheckBox;
     }
 }
