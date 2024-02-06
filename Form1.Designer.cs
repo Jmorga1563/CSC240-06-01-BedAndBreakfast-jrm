@@ -32,6 +32,7 @@
             rateLabel = new Label();
             belleAireCheckbox = new CheckBox();
             lincolnCheckBox = new CheckBox();
+            mealButton = new Button();
             SuspendLayout();
             // 
             // welcomeLabel
@@ -78,12 +79,23 @@
             lincolnCheckBox.UseVisualStyleBackColor = true;
             lincolnCheckBox.CheckedChanged += LincolnCheckBox_CheckedChanged;
             // 
+            // mealButton
+            // 
+            mealButton.Location = new Point(231, 572);
+            mealButton.Name = "mealButton";
+            mealButton.Size = new Size(409, 69);
+            mealButton.TabIndex = 4;
+            mealButton.Text = "Click for meal options";
+            mealButton.UseVisualStyleBackColor = true;
+            mealButton.Click += MealButton_Click;
+            // 
             // BaileysForm
             // 
             AutoScaleDimensions = new SizeF(20F, 48F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.OldLace;
             ClientSize = new Size(871, 687);
+            Controls.Add(mealButton);
             Controls.Add(lincolnCheckBox);
             Controls.Add(belleAireCheckbox);
             Controls.Add(rateLabel);
@@ -100,5 +112,6 @@
         private Label rateLabel;
         private CheckBox belleAireCheckbox;
         private CheckBox lincolnCheckBox;
+        private Button mealButton;
     }
 }

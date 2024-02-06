@@ -26,5 +26,11 @@ namespace CSC240_06_01_BedAndBreakfast_jrm
                 lincolnCheckBox.Checked = false;
             }
         }
+
+        private void MealButton_Click(object sender, EventArgs e)
+        {
+            BreakfastOptionForm breakfastOptionForm = new BreakfastOptionForm();
+            breakfastOptionForm.ShowDialog();
+        }
     }
 }
