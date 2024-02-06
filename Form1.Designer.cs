@@ -64,6 +64,7 @@
             belleAireCheckbox.TabIndex = 2;
             belleAireCheckbox.Text = "Belle Aire Suite";
             belleAireCheckbox.UseVisualStyleBackColor = true;
+            belleAireCheckbox.CheckedChanged += BelleAireCheckbox_CheckedChanged;
             // 
             // lincolnCheckBox
             // 
@@ -75,6 +76,7 @@
             lincolnCheckBox.TabIndex = 3;
             lincolnCheckBox.Text = "Lincoln Room";
             lincolnCheckBox.UseVisualStyleBackColor = true;
+            lincolnCheckBox.CheckedChanged += LincolnCheckBox_CheckedChanged;
             // 
             // BaileysForm
             // 
