@@ -56,6 +56,7 @@
             // 
             AutoScaleDimensions = new SizeF(20F, 48F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.OldLace;
             ClientSize = new Size(871, 687);
             Controls.Add(rateLabel);
             Controls.Add(welcomeLabel);
